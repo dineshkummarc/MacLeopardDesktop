@@ -1,0 +1,98 @@
+/*  
+|
+|	Name:			Leopard
+|	Author:			Nettuts/Harley Alexander
+|	Description:	For a Tutorial at http://nettuts.com/, it's aimed at showing how jQuery and jQuery UI can create a 
+|					leopard style Web Desktop. Although basic, it incompases Dashboard and Windows!
+|
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: #005693;
+}
+
+body{
+	background: url(images/background.jpg) no-repeat center top;
+	font: 75%/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.draggableWindow{
+	width: 500px;
+	overflow: auto;
+	clear: both;
+	padding: 0 20px;
+	float: left;
+	margin: 40px;
+}
+
+.draggableWindow h1{
+	width: 100%;
+	height: 21px;
+	float: left;
+	
+	font-size: 10px;
+	text-align: center;
+	text-indent: -67px;
+	
+	background: url(images/h1long.png) no-repeat;
+	text-shadow: #fff 1px 0 1px;
+	cursor: default;
+}
+
+.draggableWindow h1 span{
+	width: 67px;
+	height: 21px;
+	float: left;
+	background: url(images/h1short.png) no-repeat left;
+}
+
+.content{
+	background: white;
+	padding: 36px;
+}
+
+.content h2{
+	margin-bottom: 1em;
+}
+
+#smaller{
+	width: 300px;
+	float: right;
+	margin: 10px;
+	margin-top: -100px;
+}
+
+.widget{
+	position: relative;
+	z-index: 9999;
+	float: left;
+	margin: 1em;
+	list-style: none;
+}
+
+#notepad{
+	padding: 10px 20px;
+	width: 185px;
+	height: 191px;
+	background: url(images/widgets/sticky.png) no-repeat center;
+	font-size: 10px;
+}
+
+#dock{
+	position: fixed;
+	margin: 0 auto;
+	bottom: 36px;
+	left: 37.5%;
+	min-width: 20px;
+	max-width: 400px;
+	z-index: 9999;
+}
+
+#dock img{
+	float: left;
+}
